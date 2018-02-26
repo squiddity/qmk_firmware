@@ -24,8 +24,8 @@ enum custom_keycodes {
 #define _______ KC_TRNS
 #define XXXXXXX KC_NO
 
-#define KC_LWR TG(_LOWER)
-#define KC_RSE TG(_RAISE)
+#define KC_LWR OSL(_LOWER)
+#define KC_RSE OSL(_RAISE)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
