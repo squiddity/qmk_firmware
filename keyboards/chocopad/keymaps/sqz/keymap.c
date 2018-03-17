@@ -7,6 +7,9 @@
 #define KC_ KC_TRNS
 #define _______ KC_TRNS
 
+#define KC_ALTQ LALT(KC_Q)
+#define KC_ALTW LALT(KC_W)
+#define KC_ALTE LALT(KC_E)
 #define KC_X1 MO(_FN1)
 #define KC_X2 MO(_FN2)
 #define KC_RST RESET
@@ -29,21 +32,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----|
      Q   , W  , E  , R  ,
   //|----+----+----+----|
-     TAB , 5  , 6  , D  ,
+     LSFT, 5  , 6  , D  ,
   //|----+----+----+----|
-     BSTP, ESC, ENT, ENT
+     BSTP,   B ,  Z,   X1
   //`----+----+----+----'
   ),
 
   [_FN1] = KC_KEYMAP(
   //,----+----+----+----.
-     ESC , P7 , P8 , P9 ,
+     TAB, C , P8 , P9 ,
   //|----+----+----+----|
-     TAB , P4 , P5 , P6 ,
+     ALTQ , ALTW , ALTE , A ,
   //|----+----+----+----|
-     ENT , P1 , P2 , P3 ,
+          , ENT , C ,   ,
   //|----+----+----+----|
-         , P0 , P0 ,DOT 
+         , P0 , P0 , 
   //`----+----+----+----'
   ),
 
