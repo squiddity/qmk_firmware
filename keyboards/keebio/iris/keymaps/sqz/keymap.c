@@ -17,6 +17,7 @@ enum custom_keycodes {
 #define KC_OLSFT OSM(MOD_LSFT)
 #define KC_MTENT  MT(MOD_RSFT, KC_ENT)
 #define KC_MTESC  MT(MOD_LCTL, KC_ESC)
+#define KC_CTLSPC LCTL(KC_SPC)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -58,7 +59,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      KC_MUTE, KC_MSTP, KC_MPLY, KC_VOLD, KC_BRID, KC_PGDN, KC_LPRN,          _______, KC_END, RGB_HUI,  RGB_HUD, RGB_SAD, RGB_VAD, _______,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    _______, _______, _______,                   _______, _______, KC_INS
+                                    _______, _______, KC_CTLSPC,                 _______, _______, KC_INS
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   ),
 
